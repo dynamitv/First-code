@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Javascript code</title>
+</head>
+
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: lime;
+        justify-content: center;
+        display: flex;
+        font-family: monospace;
+
+    }
+
+#input textarea{
+    display: flex;
+    max-width: 500px;
+    min-height: 100px;
+
+
+}
+#button{
+    background-color: mediumblue;
+    color: mintcream;
+    border-radius: 4px;
+    border: 0px none;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#output{
+border: red 2px solid;
+height: 30px;
+background-color: silver;
+border-radius: 10px;
+text-align: center;
+
+}
+</style>
+<body>
+
+    <div id="input">
+        <textarea id="display" placeholder="enter lowercase text">
+        </textarea>
+   
+   
+        <button type="button" id="button" onclick="myFunction()">CHANGE CASE</button>
+
+        <p id="output"></p>
+    </div>
+
+<script>
+    function myFunction(){
+    var s = document.getElementById("display").value;
+    document.getElementById("output").innerHTML= s.toUpperCase();
+
+};
+</script>
+
+</body>
+</html>
